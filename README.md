@@ -5,10 +5,11 @@
 ```
 ### Requirements
 ```
-- pipenv install
+- On the pipfile
 ```
 ### Execute steps:
 ```
+- pipenv install
 - pipenv shell
 - pytest -v -s tests/login_flow -> Execute the tests under folders
 - pytest -v -s tests/login_flow -m p0 -> Execute the tests with specific mark
