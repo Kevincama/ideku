@@ -1,0 +1,36 @@
+{
+  "LOGIN_SUCCESS": {
+    "CASE_NAME": "Login account with correct pwd",
+    "TEST_URL": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "TEST_DATA": {
+      "ACCOUNT": "Admin",
+      "PWD": "admin123"
+    },
+    "EXPECT_RESULT": {
+      "LOGO_DISPLAY": true
+    }
+  },
+  "LOGIN_FAIL_WRONG_ACCOUNT": {
+    "CASE_NAME": "Login account fail with wrong account",
+    "TEST_URL": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "TEST_DATA": {
+      "ACCOUNT": "aaa",
+      "PWD": "admin123"
+    },
+    "EXPECT_RESULT": {
+      "WARNING_HINT_DISPLAY": true
+    }
+  },
+  "LOGIN_FAIL_WRONG_PWD": {
+    "CASE_NAME": "Login account with wrong pwd",
+    "TEST_URL": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "TEST_DATA": {
+      "ACCOUNT": "Admin",
+      "PWD": "aaa"
+    },
+    "EXPECT_RESULT": {
+      "WARNING_HINT_DISPLAY": true
+    }
+  }
+}
+
